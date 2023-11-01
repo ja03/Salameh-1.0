@@ -1,5 +1,5 @@
 import React from "react";
-import companyVideo from "../assets/vids/989898.mp4";
+import companyVideo from "../assets/vids/SSCO-video.mp4";
 import AOS from "aos";
 // Components
 import NavBar from "./hero-sub-comp/NavBar";
