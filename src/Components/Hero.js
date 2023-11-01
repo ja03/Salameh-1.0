@@ -1,5 +1,7 @@
 import React from "react";
 import companyVideo from "../assets/vids/SSCO-video.mp4";
+import ReactPlayer from "react-player";
+
 import AOS from "aos";
 // Components
 import NavBar from "./hero-sub-comp/NavBar";
@@ -14,13 +16,15 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-once="true">
             {/* Hero Video */}
-            <div className="absolute -z-20 w-full h-screen -top-0 left-0 ">
-                <video
-                    src={companyVideo}
-                    className="w-full h-screen object-cover"
+            <div className="absolute -z-20 w-full h-full -top-0 left-0 scale-[4.2] sm:scale-[3] md:scale-[2.7]">
+                <ReactPlayer
+                    url={companyVideo}
                     loop
                     muted
-                    autoPlay></video>
+                    width="100%"
+                    height="100%"
+                    playing={true}
+                />
             </div>
 
             {/* Hero Mask */}
