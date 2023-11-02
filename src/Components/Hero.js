@@ -24,7 +24,7 @@ const Hero = () => {
                     muted={true}
                     width="100%"
                     height="100%"
-                    playsinline={true}
+                    playsInline={true}
                     playing={true}
                 />
             </div>
