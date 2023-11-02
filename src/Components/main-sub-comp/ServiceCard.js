@@ -16,15 +16,14 @@ const ServiceCard = ({ title, text, imgSrc, flipOrder }) => {
                 <h3 className="font-bold text-lg">{title}</h3>
                 <p className="text-md">{text}</p>
             </div>
-
             <div
-                className={`w-full md:w-1/2 flex flex-col items-center md:${
+                className={`w-full bg-slate-700 h-auto md:w-1/2 flex flex-col items-center justify-center md:${
                     flipOrder && "order-1"
                 }`}>
                 <img
                     src={imgSrc}
                     alt="service"
-                    className="w-full"
+                    className="w-[100%] h-auto flex-1 "
                     typeof="image/webp"
                 />
             </div>
