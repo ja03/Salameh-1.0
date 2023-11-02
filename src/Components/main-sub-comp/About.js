@@ -4,7 +4,9 @@ import aboutImg from "../../assets/imgs/teamImg.webp";
 import AboutCard from "./AboutCard";
 const About = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 container">
+        <div
+            id="AboutSection"
+            className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 container">
             <div className="w-full h-fit py-4 lg:w-1/2 order-2 lg:order-1 grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-6 ">
                 <div
                     className="w-full h-[250px] sm:h-[300px]"
@@ -12,8 +14,7 @@ const About = () => {
                     data-aos-offset="0"
                     data-aos-delay="300"
                     data-aos-duration="1000"
-                    data-aos-once="true"
-                    id="AboutSection">
+                    data-aos-once="true">
                     <AboutCard
                         title={"الرسالة"}
                         text={

@@ -1,17 +1,14 @@
 import React from "react";
-
-// Importing Components
-import Hero from "./Components/Hero";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// Pages
+import Home from "./Home";
 function App() {
     return (
-        <div className="App flex flex-col gap-[128px]">
-            <Hero />
-            <Main />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 

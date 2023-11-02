@@ -1,7 +1,7 @@
 import React from "react";
 import companyVideo from "../assets/vids/SSCO-video.mp4";
 import ReactPlayer from "react-player";
-// import AOS from "aos";
+import { Link } from "react-router-dom";
 // Components
 
 import NavBar from "./hero-sub-comp/NavBar";
@@ -59,7 +59,9 @@ const Hero = () => {
                             مع حلولنا المبتكرة، نحقق أهداف الأمن والسلامة بطرق
                             فريدة وجودة لا مثيل لها.
                         </p>
-                        {/* <div className="group flex flex-col items-center justify-end m-4 transition-shadow ease duration-150 shadow-slate-700 hover:shadow-2xl">
+                        <a
+                            className="group flex flex-col items-center justify-end m-4 transition-shadow ease duration-150 shadow-slate-700 hover:shadow-2xl"
+                            href="#AbouSection">
                             <span>تعرف على المزيد</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +76,7 @@ const Hero = () => {
                                     d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                                 />
                             </svg>
-                        </div> */}
+                        </a>
                     </div>
 
                     <div
