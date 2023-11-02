@@ -17,13 +17,14 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-once="true">
             {/* Hero Video */}
-            <div className="absolute -z-20 w-full h-full -top-0 left-0 scale-[4.2] sm:scale-[3] md:scale-[1.7]">
+            <div className="absolute -z-20 w-full h-full -top-0 left-0 scale-[5] sm:scale-[3] md:scale-[2]">
                 <ReactPlayer
                     url={companyVideo}
                     loop={true}
                     muted={true}
                     width="100%"
                     height="100%"
+                    playsinline={true}
                     playing={true}
                 />
             </div>
