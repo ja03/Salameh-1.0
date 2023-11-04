@@ -12,7 +12,9 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
     return (
-        <div className="flex flex-col items-center container">
+        <div
+            className="flex flex-col items-center container"
+            id="ServiceSection">
             <h2
                 className="text-xl mb-6"
                 data-aos="fade-up"

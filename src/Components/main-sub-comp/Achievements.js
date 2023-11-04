@@ -9,7 +9,8 @@ const Achievements = () => {
             data-aos-offset="0"
             data-aos-delay="000"
             data-aos-duration="1000"
-            data-aos-once="true">
+            data-aos-once="true"
+            id="AchiveSection">
             <div
                 className="w-full h-[232px] md:h-[464px] md:w-1/2  bg-cover bg-center"
                 style={{ backgroundImage: `url(${achievementImg})` }}></div>

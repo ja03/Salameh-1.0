@@ -41,9 +41,7 @@ const Hero = () => {
                 data-aos-delay="300"
                 data-aos-duration="1000"
                 data-aos-once="true">
-                <NavBar
-                    links={["تواصل معنا", "خدماتنا", "انجازاتنا", "عن سلامة"]}
-                />
+                <NavBar />
             </div>
 
             {/* adding Text */}
