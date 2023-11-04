@@ -33,7 +33,8 @@ const Hero = () => {
                     autoPlay
                     muted
                     loop
-                    playsInline>
+                    playsInline
+                    controls>
                     <source src={companyVideo} type="video/mp4" />
                 </video>
             </div>
