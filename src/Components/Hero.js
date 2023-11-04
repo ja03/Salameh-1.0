@@ -34,7 +34,7 @@ const Hero = () => {
                     muted
                     loop
                     playsInline>
-                    <source src={companyVideo} />
+                    <source src={companyVideo} type="video/mp4" />
                 </video>
             </div>
 
