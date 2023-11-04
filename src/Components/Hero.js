@@ -19,7 +19,7 @@ const Hero = () => {
             data-aos-once="true">
             {/* Hero Video */}
             <div className="absolute -z-20 w-full h-full -top-0 left-0 scale-[5] sm:scale-[3] md:scale-[2]">
-                <ReactPlayer
+                {/* <ReactPlayer
                     url={companyVideo}
                     loop={true}
                     muted={true}
@@ -27,7 +27,17 @@ const Hero = () => {
                     height="100%"
                     playsInline={true}
                     playing={true}
-                />
+                /> */}
+                <video
+                    className="w-full h-full"
+                    controls="controls"
+                    preload="auto"
+                    autoPlay="autoplay"
+                    loop
+                    muted
+                    playsInline>
+                    <source src={companyVideo} />
+                </video>
             </div>
 
             {/* Hero Mask */}

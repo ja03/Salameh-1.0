@@ -32,7 +32,10 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center border-t-2 border-t-accent pt-8 text-md text-accent">
                     <div className="order-2 md:order-1 text-center md:text-right ">
                         <p>جميع الحقوق محفوظة شركة سلامة السعودية</p>
-                        <a className="underline underline-offset-4" href="#">
+                        <a
+                            className="underline underline-offset-4"
+                            href="https://www.linkedin.com/in/ahmad-mahmoud-a69098242/"
+                            target="_blank">
                             تصميم و تطوير أحمد محمود
                         </a>
                     </div>
