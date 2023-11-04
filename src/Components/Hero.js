@@ -30,7 +30,6 @@ const Hero = () => {
                 /> */}
                 <video
                     className="w-full h-full"
-                    controls={true}
                     preload={true}
                     autoPlay={true}
                     loop={true}
