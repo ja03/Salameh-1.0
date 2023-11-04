@@ -21,14 +21,14 @@ const Hero = () => {
             <div className="absolute -z-20 w-full h-full -top-0 left-0 scale-[5] sm:scale-[3] md:scale-[2]">
                 {/* <ReactPlayer
                     url={companyVideo}
-                    loop={true}
-                    muted={true}
+                    loop
+                    muted
                     width="100%"
                     height="100%"
-                    playsInline={true}
-                    playing={true}
+                    playsInline
+                    playing
                 /> */}
-                <video
+                {/* <video
                     className="w-full h-full"
                     autoPlay
                     muted
@@ -37,7 +37,20 @@ const Hero = () => {
                     controls={false}
                     preload="auto">
                     <source src={companyVideo} type="video/mp4" />
-                </video>
+                </video> */}
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        <video
+                            loop
+                            muted
+                            autoplay
+                            playsinline
+                            src="${companyVideo}"
+                            class="w-full h-full"
+                        />,
+                        `,
+                    }}></div>
             </div>
 
             {/* Hero Mask */}
