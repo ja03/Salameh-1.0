@@ -30,11 +30,10 @@ const Hero = () => {
                 /> */}
                 <video
                     className="w-full h-full"
-                    preload={true}
-                    autoPlay={true}
-                    loop={true}
-                    muted={true}
-                    playsinline>
+                    autoPlay
+                    muted
+                    loop
+                    playsInline>
                     <source src={companyVideo} />
                 </video>
             </div>
