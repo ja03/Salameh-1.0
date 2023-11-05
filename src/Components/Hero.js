@@ -28,29 +28,15 @@ const Hero = () => {
                     playsInline
                     playing
                 /> */}
-                {/* <video
+                <video
                     className="w-full h-full"
-                    autoPlay
                     muted
-                    loop
-                    playsInline
-                    controls={false}
-                    preload="auto">
+                    autoplay
+                    playsinline
+                    controls
+                    loop>
                     <source src={companyVideo} type="video/mp4" />
-                </video> */}
-                <div
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        <video
-                            loop
-                            muted
-                            autoplay
-                            playsinline
-                            src="${companyVideo}"
-                            class="w-full h-full"
-                        />,
-                        `,
-                    }}></div>
+                </video>
             </div>
 
             {/* Hero Mask */}
