@@ -9,11 +9,13 @@ import NavBar from "./hero-sub-comp/NavBar";
 // import Btn from "./Btn";
 
 const Hero = () => {
-    useEffect(() => {
-        const videoElement = document.querySelector("video");
-        videoElement.muted = true; // Make sure it's muted
-        videoElement.play();
-    }, []);
+    // useEffect(() => {
+    //     const videoElement = document.querySelector("video");
+    //     videoElement.muted = true; // Make sure it's muted
+    //     videoElement.playsInline = true;
+    //     videoElement.autoplay = true;
+    //     videoElement.play();
+    // }, []);
     return (
         <div
             className=" relative h-screen  overflow-hidden p-6 flex flex-col  justify-between"
@@ -24,7 +26,16 @@ const Hero = () => {
             data-aos-once="true">
             {/* Hero Video */}
             <div className="absolute -z-20 w-full h-full -top-0 left-0 scale-[5] sm:scale-[3] md:scale-[2]">
-                <video
+                <ReactPlayer
+                    url={companyVideo}
+                    loop
+                    muted
+                    width="100%"
+                    height="100%"
+                    playsinline
+                    playing
+                />
+                {/* <video
                     className="w-full h-full"
                     muted
                     autoplay
@@ -32,7 +43,7 @@ const Hero = () => {
                     controls
                     loop>
                     <source src={companyVideo} type="video/mp4" />
-                </video>
+                </video> */}
             </div>
 
             {/* Hero Mask */}
